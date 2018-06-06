@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My first Vue app</title>
+  <script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+  <div id="app">
+    <my-component></my-component>
+    {{ message }}
+  </div>
+
+  <script>
+    Vue.component('my-component', {
+      template: '<div>Check this out!</div>'
+    })
+    // Creation of a Vue instance
+    var app = new Vue({
+      el: '#app',
+      data: {
+        message: 'Hello Vue!'
+      }
+    })
+  </script>
+</body>
+</html>
